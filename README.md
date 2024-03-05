@@ -94,9 +94,9 @@ pause
 └── NCED.mkv
 ```
 
-可使用qbittorrent 建立 僅v1種子 (勾選私人種子)
+之後桌面端可使用qbittorrent 建立 僅v1種子 (勾選私人種子)
 
-如要盒子發種，也可把數據傳輸到盒子後，使用mktorrent
+如要盒子發種(命令行)，也可使用mktorrent
 
 mktorrent指令範例
 ```sh

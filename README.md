@@ -42,6 +42,8 @@ pause
 
 ### 6. 執行 bat 等待完成
 
+<img src="/img/06.png" alt="image" width=640>
+
 ### 7. 使用makemkv提取ncop/nced (如果沒有就不用了)
 需事先修改makemkv設置
 1. 最小標題長 30 秒

@@ -19,7 +19,7 @@
 
 建議使用圖中的版本號，印象中後面有些版本有奇怪的bug
 
-輸出在同目錄即可，記得勾選episode demuxing (如果是肉醬盤用這個也沒救)
+輸出在同目錄即可，通常選取最長的那個playlist，但有時確實會出現特點比正片長的情況，最後記得勾選episode demuxing (如果是肉醬盤用這個也沒救)
 <img src="/img/02.png" alt="image" width=640>
 
  ***

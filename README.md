@@ -73,6 +73,27 @@ pause
 ***
 
 ### 9. 建立種子
+
+先確認文件結構，以下是範例
+
+```sh
+[BDRemux] Hoshikuzu Telepath S01
+├── Hoshikuzu Telepath S01E01-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E02-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E03-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E04-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E05-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E06-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E07-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E08-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E09-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E10-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E11-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E12-[1080p][JP.BD.Remux].mkv
+├── NCOP.mkv
+└── NCED.mkv
+```
+
 可使用qbittorrent 建立 僅v1種子 (勾選私人種子)
 
 如要盒子發種，也可把數據傳輸到盒子後，使用mktorrent

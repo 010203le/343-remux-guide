@@ -35,6 +35,26 @@
  
  (輸出文件名可善用 nastool 識別測試功能，確保命名可被媒體庫識別，範例 Name S01E01-[1080p][JP.BD.Remux].mkv)
 
+文件結構，以下是範例
+
+```sh
+[BDRemux] Hoshikuzu Telepath S01
+├── Hoshikuzu Telepath S01E01-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E02-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E03-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E04-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E05-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E06-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E07-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E08-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E09-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E10-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E11-[1080p][JP.BD.Remux].mkv
+├── Hoshikuzu Telepath S01E12-[1080p][JP.BD.Remux].mkv
+├── NCOP.mkv
+└── NCED.mkv
+```
+
 ***
 
 ### 5. 將指令複製成多份，並將每行指令更改為不同集數對應文件
@@ -72,37 +92,6 @@ pause
 
 ### 8. 確認文件封裝正確、字幕時軸匹配
 
-就.. 播放看看檢查下，不附圖。
+就.. 播放看看檢查下
 
 ***
-
-### 9. 建立種子
-
-先確認文件結構，以下是範例
-
-```sh
-[BDRemux] Hoshikuzu Telepath S01
-├── Hoshikuzu Telepath S01E01-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E02-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E03-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E04-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E05-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E06-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E07-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E08-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E09-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E10-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E11-[1080p][JP.BD.Remux].mkv
-├── Hoshikuzu Telepath S01E12-[1080p][JP.BD.Remux].mkv
-├── NCOP.mkv
-└── NCED.mkv
-```
-
-之後桌面端可使用qbittorrent 建立 僅v1種子 (勾選私人種子)
-
-如要盒子發種(命令行)，也可使用mktorrent
-
-mktorrent指令範例
-```sh
-mktorrent -v -p -l 24 -a http://tracker.example -o output.torrent "[BDRemux] Name S01"
-```

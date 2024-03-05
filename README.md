@@ -1,5 +1,7 @@
 這是一個通過dgdemux , ffmpeg, mkvtoolnix, makemkv 來製作符合 本組 remux 標準的 "範例" 流程。
 
+***
+
 ### 1.	整理分卷原盤文件結構
 如使用dgdemux 路徑只能英文
 ```
@@ -10,22 +12,30 @@
     └── BDMV
 ```
 <img src="/img/01.png" alt="image" width=640>
- 
+
+***
+
 ### 2. 使用 dgdemux 來 demux 原盤
 
 建議使用圖中的版本號，印象中後面有些版本有奇怪的bug
 
 輸出在同目錄即可，記得勾選episode demuxing (如果是肉醬盤用這個也沒救)
 <img src="/img/02.png" alt="image" width=640>
+
+ ***
  
 ### 3. Convert pcm to 16bits flac via ffmpeg (python script)
 批量處理可參考 <https://github.com/010203le/343-remux-guide/blob/main/scripts/toFLAC.py>
 <img src="/img/03.png" alt="image" width=640>
 
+***
+
 ### 4. 使用 mkvtoolnix 獲取第一集的封裝指令
 <img src="/img/05.png" alt="image" width=640>
  
  (輸出文件名可善用 nastool 識別測試功能，確保命名可被媒體庫識別，範例 Name S01E01-[1080p][JP.BD.Remux].mkv)
+
+***
 
 ### 5. 將指令複製成多份，並將每行指令更改為不同集數對應文件
 建立bat檔並在末行加上 pause，以便跑完後查看log
@@ -40,9 +50,13 @@ D:\Workspace\remux_tools\mkvtoolnix-64-bit-70.0.0\mkvmerge.exe --ui-language zh_
 pause
 ```
 
+***
+
 ### 6. 執行 bat 等待完成
 
 <img src="/img/06.png" alt="image" width=640>
+
+***
 
 ### 7. 使用makemkv提取ncop/nced (如果沒有就不用了)
 需事先修改makemkv設置
@@ -52,7 +66,11 @@ pause
 
 <img src="/img/04.png" alt="image" width=640>
 
+***
+
 ### 8. 確認文件封裝正確、字幕時軸匹配
+
+***
 
 ### 9. 建立種子
 可使用qbittorrent 建立 僅v1種子 (勾選私人種子)

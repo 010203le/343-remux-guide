@@ -46,6 +46,7 @@
 可使用qbittorrent 建立 僅v1種子 (勾選私人種子)
 
 如要盒子發種，也可把數據傳輸到盒子後，使用mktorrent
+
 mktorrent指令範例
 ```sh
 mktorrent -v -p -l 24 -a http://tracker.example -o output.torrent "[BDRemux] Name S01"
